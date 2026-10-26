@@ -218,3 +218,412 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
   .bar2 .btn { padding: 8px 15px; font-size: 0.85rem; }
   .price-strike { font-size: 0.7em; }
 }
+
+/* ========================================================= */
+/* 5 CARDS FEATURES STYLES (REFERENSI GAMBAR)                */
+/* ========================================================= */
+
+.features-wrapper {
+  margin: 50px 0;
+  padding: 30px;
+  background-color: #EBF4FF; /* Warna biru muda pastel seperti di desain */
+  border-radius: var(--rad-lg);
+}
+
+[data-theme="dark"] .features-wrapper {
+  background-color: #0B1120; /* Gelap jika mode dark */
+  border: 1px solid var(--c-border);
+}
+
+.features-heading {
+  text-align: center;
+  color: var(--c-primary-dark);
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+[data-theme="dark"] .features-heading {
+  color: #fff;
+}
+
+.five-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.f-card {
+  background: var(--c-card-bg);
+  border: 2px solid #BFDBFE; /* Border biru terang */
+  border-radius: var(--rad-md);
+  padding: 35px 15px 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+[data-theme="dark"] .f-card {
+  border-color: var(--c-border);
+}
+
+.f-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.f-badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2563EB; /* Biru tebal untuk nomor */
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: var(--f-heading);
+  font-weight: 800;
+  font-size: 1.2rem;
+  border: 4px solid var(--c-bg); /* Memberi efek potongan border */
+}
+
+.f-img-box {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: var(--c-bg);
+  border-radius: var(--rad-sm);
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+}
+
+.f-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.f-card h4 {
+  font-size: 1.05rem;
+  color: var(--c-primary-dark);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+[data-theme="dark"] .f-card h4 {
+  color: #fff;
+}
+
+.f-card p {
+  font-size: 0.85rem;
+  color: var(--c-text-light);
+  line-height: 1.5;
+}
+
+/* --- RESPONSIVE UNTUK HP DAN TABLET --- */
+@media (max-width: 1024px) {
+  .five-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di tablet */
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .five-grid {
+    grid-template-columns: 1fr; /* 1 kolom bertumpuk di HP */
+  }
+  .features-wrapper {
+    padding: 20px;
+  }
+}
+
+/* section kelima */
+
+/* ========================================================= */
+/* PRICING SECTION (PILIHAN PAKET) STYLES                    */
+/* ========================================================= */
+
+.pricing-section {
+  background-color: var(--c-hero-bg);
+  padding: 80px 0;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tag-gold {
+  display: inline-block;
+  background-color: #f7e6c5;
+  color: #a87b32;
+  font-family: var(--f-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 6px 20px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.pricing-header h2 {
+  font-size: 2.5rem;
+  color: #123055;
+  margin-bottom: 10px;
+}
+[data-theme="dark"] .pricing-header h2 { color: #fff; }
+
+.pricing-sub {
+  font-size: 1.1rem;
+  color: var(--c-text-light);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+
+.p-card {
+  background: var(--c-card-bg);
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border: 2px solid transparent;
+}
+[data-theme="dark"] .p-card { border-color: var(--c-border); }
+
+/* Tema Warna Card */
+.card-blue { border-color: #dbeafe; background: linear-gradient(to bottom, #f0f7ff, var(--c-card-bg) 20%); }
+.card-brown { border-color: #fef3c7; background: linear-gradient(to bottom, #fffbeb, var(--c-card-bg) 20%); }
+.card-gold { border-color: #dfb15b; background: linear-gradient(to bottom, #fffdf5, var(--c-card-bg) 20%); box-shadow: 0 15px 35px rgba(223, 177, 91, 0.15); border-width: 3px; }
+
+[data-theme="dark"] .card-blue, [data-theme="dark"] .card-brown, [data-theme="dark"] .card-gold {
+  background: var(--c-card-bg);
+}
+[data-theme="dark"] .card-gold { border-color: #dfb15b; }
+
+/* Header Card */
+.p-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.p-number {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-family: var(--f-heading);
+}
+.card-blue .p-number { background-color: #2b5783; }
+.card-brown .p-number { background-color: #b07c46; }
+.card-gold .p-number { background-color: #123055; }
+
+.p-card-header h3 {
+  font-size: 1.2rem;
+  color: #123055;
+  margin: 0;
+}
+[data-theme="dark"] .p-card-header h3 { color: #fff; }
+
+.p-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: var(--c-bg);
+  text-align: center;
+}
+.p-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.p-desc {
+  font-size: 0.95rem;
+  color: var(--c-text);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Features List */
+.p-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  flex-grow: 1; /* Mendorong harga ke bawah */
+}
+.p-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: var(--c-text);
+}
+.check-blue, .check-brown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.6rem;
+  margin-top: 3px;
+}
+.check-blue { background-color: #3b82f6; }
+.check-brown { background-color: #b07c46; }
+
+/* Pricing Box */
+.p-price-box {
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+[data-theme="dark"] .p-price-box { background-color: var(--c-bg); }
+
+.p-price-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.price-old {
+  text-decoration: line-through;
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.price-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+.badge-yellow { background-color: #fef08a; color: #854d0e; }
+.badge-red { background-color: #fecaca; color: #b91c1c; }
+
+.price-new {
+  font-size: 2.2rem;
+  font-family: var(--f-heading);
+  font-weight: 800;
+  color: var(--c-text);
+}
+
+/* Buttons */
+.btn-paket {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+  color: #fff;
+  font-family: var(--f-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+.btn-blue { background-color: #1a426e; }
+.btn-brown { background-color: #a16b38; }
+.btn-gold { background-color: #c08a38; }
+
+.btn-paket:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* Ribbon Highlight */
+.best-choice-ribbon {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #dfb15b;
+  color: #fff;
+  font-family: var(--f-heading);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(223, 177, 91, 0.4);
+  z-index: 10;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .pricing-header h2 { font-size: 2rem; }
+}
+
+/* ========================================================= */
+/* WATERMARK FOOTER STYLES                                   */
+/* ========================================================= */
+
+.main-footer {
+    background-color: var(--c-bg); /* Mengikuti warna background utama */
+    border-top: 1px solid var(--c-border); /* Garis batas tipis di atas */
+    padding: 25px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Mendorong footer ke paling bawah jika konten sedikit */
+}
+
+.main-footer .footer-container p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--c-text-light); /* Warna abu-abu yang tidak mencolok */
+    font-family: var(--f-body);
+    font-weight: 500;
+}
+
+.main-footer strong {
+    color: var(--c-primary);
+    font-family: var(--f-heading);
+}
+
+.main-footer .creator {
+    font-weight: 700;
+    color: var(--c-primary);
+}
+
+/* Animasi detak jantung untuk emoji love */
+.main-footer .heart {
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    15% { transform: scale(1.25); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.25); }
+    60% { transform: scale(1); }
+}
+
+/* Penyesuaian agar tidak tertutup bottom bar (jika ada) di versi mobile */
+@media (max-width: 768px) {
+    .main-footer {
+        padding-bottom: 80px; /* Tambahkan ruang ekstra di bawah saat di HP */
+    }
+}
