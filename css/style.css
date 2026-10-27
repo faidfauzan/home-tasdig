@@ -182,8 +182,8 @@ section h2 { font-size: 2rem; margin-bottom: 20px; max-width: 700px; }
 .acc:last-of-type { border-bottom: none; }
 .copy { width: 100%; margin-top: 15px; padding: 10px; background: var(--c-bg); border: 1px solid var(--c-border); border-radius: 6px; cursor: pointer; font-weight: 600; color: var(--c-primary); }
 .copy:hover { background: var(--c-border); }
-.wa { display: block; background: #25D366; color: white; width: 100%; }
-.wa:hover { background: #128C7E; color: white; }
+.wa { display: block; background: #03b042; color: white; width: 100%; }
+.wa:hover { background: #128c65; color: white; }
 
 footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light); font-size: 0.9rem; }
 .bar2 {
@@ -226,12 +226,12 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
 .features-wrapper {
   margin: 50px 0;
   padding: 30px;
-  background-color: #EBF4FF; /* Warna biru muda pastel seperti di desain */
+  background-color: #EBF4FF; 
   border-radius: var(--rad-lg);
 }
 
 [data-theme="dark"] .features-wrapper {
-  background-color: #0B1120; /* Gelap jika mode dark */
+  background-color: #0B1120; 
   border: 1px solid var(--c-border);
 }
 
@@ -254,7 +254,7 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
 
 .f-card {
   background: var(--c-card-bg);
-  border: 2px solid #BFDBFE; /* Border biru terang */
+  border: 2px solid #BFDBFE; 
   border-radius: var(--rad-md);
   padding: 35px 15px 20px;
   position: relative;
@@ -277,7 +277,7 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
   top: -20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #2563EB; /* Biru tebal untuk nomor */
+  background-color: #2563EB; 
   color: #fff;
   width: 40px;
   height: 40px;
@@ -288,7 +288,7 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
   font-family: var(--f-heading);
   font-weight: 800;
   font-size: 1.2rem;
-  border: 4px solid var(--c-bg); /* Memberi efek potongan border */
+  border: 4px solid var(--c-bg); 
 }
 
 .f-img-box {
@@ -327,14 +327,14 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
 /* --- RESPONSIVE UNTUK HP DAN TABLET --- */
 @media (max-width: 1024px) {
   .five-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom di tablet */
+    grid-template-columns: repeat(3, 1fr); 
     row-gap: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .five-grid {
-    grid-template-columns: 1fr; /* 1 kolom bertumpuk di HP */
+    grid-template-columns: 1fr;
   }
   .features-wrapper {
     padding: 20px;
@@ -466,7 +466,7 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
   list-style: none;
   padding: 0;
   margin: 0 0 25px 0;
-  flex-grow: 1; /* Mendorong harga ke bawah */
+  flex-grow: 1; 
 }
 .p-features li {
   display: flex;
@@ -581,18 +581,18 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
 /* ========================================================= */
 
 .main-footer {
-    background-color: var(--c-bg); /* Mengikuti warna background utama */
-    border-top: 1px solid var(--c-border); /* Garis batas tipis di atas */
+    background-color: #cdd0ff;
+    border-top: 1px solid var(--c-border); 
     padding: 25px 20px;
     text-align: center;
     width: 100%;
-    margin-top: auto; /* Mendorong footer ke paling bawah jika konten sedikit */
+    margin-top: auto; 
 }
 
 .main-footer .footer-container p {
     margin: 0;
     font-size: 0.95rem;
-    color: var(--c-text-light); /* Warna abu-abu yang tidak mencolok */
+    color: var(--c-text-light); 
     font-family: var(--f-body);
     font-weight: 500;
 }
@@ -627,3 +627,23 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
         padding-bottom: 80px; /* Tambahkan ruang ekstra di bawah saat di HP */
     }
 }
+
+/* ========================================================= */
+/* MULTIPLE PAYMENT SECTIONS STYLES                          */
+/* ========================================================= */
+
+/* Tema Kelas Privat (Cokelat) */
+.section-brown { background-color: #8c5d34 !important; }
+.tag-brown { background-color: #fffbeb !important; color: #b07c46 !important; }
+.btn-brown-solid { background-color: #a16b38 !important; color: white !important; }
+.btn-brown-solid:hover { background-color: #855325 !important; }
+.mbtn-brown.on { color: #a16b38 !important; }
+.copy-brown { color: #a16b38 !important; }
+
+/* Tema Kombinasi (Emas) */
+.section-gold { background-color: #a87b32 !important; }
+.tag-gold-dark { background-color: #fffdf5 !important; color: #98620c !important; }
+.btn-gold-solid { background-color: #9f6b0a !important; color: #123055 !important; }
+.btn-gold-solid:hover { background-color: #c99c47 !important; }
+.mbtn-gold.on { color: #623e08 !important; }
+.copy-gold { color: #794a03 !important; }
