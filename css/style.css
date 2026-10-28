@@ -359,8 +359,8 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
 
 .tag-gold {
   display: inline-block;
-  background-color: #f7e6c5;
-  color: #a87b32;
+  background-color: #f5f2ec;
+  color: #a7711a;
   font-family: var(--f-heading);
   font-weight: 700;
   font-size: 0.9rem;
@@ -374,6 +374,9 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
   font-size: 2.5rem;
   color: #123055;
   margin-bottom: 10px;
+  margin-left: auto;  /* Menengahkan kotak ke kiri */
+  margin-right: auto; /* Menengahkan kotak ke kanan */
+  max-width: 100%;    /* Menimpa batasan lebar sebelumnya */
 }
 [data-theme="dark"] .pricing-header h2 { color: #fff; }
 
@@ -573,7 +576,11 @@ footer { text-align: center; padding: 40px 20px 100px; color: var(--c-text-light
     max-width: 500px;
     margin: 0 auto;
   }
-  .pricing-header h2 { font-size: 2rem; }
+  .pricing-header h2 {
+    font-size: 2rem;
+    color: #123055;
+    margin-bottom: 10px;
+    }
 }
 
 /* ========================================================= */
