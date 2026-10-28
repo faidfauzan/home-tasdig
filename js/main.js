@@ -7,7 +7,7 @@ const waNumber = "6285731142534";
 // Pesan WA yang berbeda untuk tiap paket
 const waTextTasdig = "Halo Admin TASDIG, saya sudah transfer Rp54.000 untuk paket TASDIG Saja.";
 const waTextPrivat = "Halo Admin TASDIG, saya sudah transfer Rp190.000 untuk paket Kelas Privat.";
-const waTextKombinasi = "Halo Admin TASDIG, saya sudah transfer Rp220.000 untuk paket Kombinasi (TASDIG + Kelas Privat).";
+const waTextKombinasi = "Halo Admin TASDIG, saya sudah transfer Rp235.000 untuk paket Kombinasi (TASDIG + Kelas Privat).";
 
 function initTheme() {
     const themeBtn = document.getElementById('themeToggle');
